@@ -100,6 +100,11 @@ var GameState = {
     this.game.physics.arcade.overlap(this.player, this.barrels, this.killPlayer);
     this.game.physics.arcade.overlap(this.player, this.goal, this.win);
 
+
+    if(this.player.position.y > 700) this.killPlayer();
+
+
+    // controls
     this.player.body.velocity.x = 0;
 
     if (this.cursors.left.isDown || this.player.customParams.isMovingLeft) {
