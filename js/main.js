@@ -28,7 +28,7 @@ var GameState = {
     game.load.audio('lemoncreme', ['assets/audio/lemoncreme-floating-synth-melody.mp3', 'lemoncreme-floating-synth-melody.ogg']);
   },
   create: function() {
-    this.music = game.add.audio('lemoncreme', 0.4, true);
+    this.music = game.add.audio('lemoncreme', 1, true);
     this.music.play();
 
 
